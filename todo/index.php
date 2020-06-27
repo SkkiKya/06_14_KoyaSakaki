@@ -3,6 +3,7 @@ session_start();
 include('../login/funcs.php');
 loginCheck();
 require_once('../db_Data/db.php');
+connect_db();
 ?>
 
 <!DOCTYPE html>

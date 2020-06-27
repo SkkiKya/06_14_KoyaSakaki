@@ -1,5 +1,6 @@
 <?php
 require_once('../db_Data/db.php');
+connect_db();
 
 // 削除内容の取得
 $d_id = $_POST["d_id"];

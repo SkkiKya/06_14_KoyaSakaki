@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once('../db_Data/db.php');
+connect_db();
 // 送信確認
 
 // 項目入力のチェック

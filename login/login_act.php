@@ -4,7 +4,8 @@ $lname = $_POST["lname"];
 $lpw = $_POST["lpw"];
 
 // DB接続の設定
-require_once('../db_Data/db.php');
+include('../db_Data/db.php');
+$pdo = connect_db();
 
 // 2.SQL準備&実行
 $sql = 'SELECT * FROM user_table WHERE u_name=:lname AND u_pw=:lpw';

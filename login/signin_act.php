@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once('../db_Data/db.php');
-
+connect_db();
 
 // 受け取ったデータを変数に入れる
 $name = $_POST['u_name'];

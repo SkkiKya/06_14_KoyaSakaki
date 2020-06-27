@@ -5,7 +5,7 @@ include('../login/funcs.php');
 
 loginCheck();
 require_once('../db_Data/db.php');
-
+$pdo = connect_db();
   // DB接続の設定
   // db.php
 

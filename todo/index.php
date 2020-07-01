@@ -19,7 +19,7 @@ connect_db();
   <h1>ようこそ <?=h($_SESSION["u_name"])?>さんのtodoリストです。</h1>
   <a href="todo_read.php">一覧画面</a>
   <a href="todo_input.php">入力画面</a>
-  <a href="../login/login.php" class="">ログアウト</a>
+  <a href="../login/logout.php" class="">ログアウト</a>
   <?php else: ?>
     <a href="../login/login.php"></a>
   <?php endif ?>

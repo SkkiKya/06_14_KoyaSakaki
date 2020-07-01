@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once('../db_Data/db.php');
-connect_db();
+$pdo = connect_db();
 
 // 受け取ったデータを変数に入れる
 $name = $_POST['u_name'];
@@ -26,5 +26,5 @@ exit('sqlError:'.$error[2]);
   $_SESSION["chk_ssid"] = session_id();  //session_id();各ユーザーに一人一人違うキーを作成
   // 正常にSQLが実行された場合は入力ページファイルに移動し，入力ページの処理を実行する
   $_SESSION["u_name"] = $name;
-header('Location:../Myapp/index.php');
+header('Location:../todo/index.php');
 }
